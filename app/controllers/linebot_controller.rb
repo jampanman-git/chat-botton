@@ -9,7 +9,7 @@ class LinebotController < ApplicationController
       config.channel_token = ENV["LINE_CHANNEL_TOKEN"]
     }
   end
- 
+
   def callback
     body = request.body.read
 
@@ -63,5 +63,4 @@ class LinebotController < ApplicationController
       }
     }
   end
-
 end
